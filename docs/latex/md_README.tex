@@ -1,0 +1,26 @@
+\chapter{Proyecto de Respaldo Automático con ESP32 y Raspberry Pi}
+\hypertarget{md_README}{}\label{md_README}\index{Proyecto de Respaldo Automático con ESP32 y Raspberry Pi@{Proyecto de Respaldo Automático con ESP32 y Raspberry Pi}}
+\label{md_README_autotoc_md0}%
+\Hypertarget{md_README_autotoc_md0}%
+ Este repositorio contiene dos partes\+:
+
+
+\begin{DoxyItemize}
+\item {\ttfamily /esp32}\+: Código en Platform\+IO (C++) para ESP32 que chequea el estado de {\ttfamily \href{https://imprenet.ar}{\texttt{ https\+://imprenet.\+ar}}}.
+\item {\ttfamily /raspberry}\+: Script Python que ejecuta backups si el servidor está caído.
+\item {\ttfamily /docs}\+: Documentación generada con Doxygen o manual.
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md1}{}\doxysection{\texorpdfstring{Requisitos}{Requisitos}}\label{md_README_autotoc_md1}
+
+\begin{DoxyItemize}
+\item ESP32 Dev\+Kit
+\item Raspberry Pi Zero 2 W
+\item Micro\+SD Clase 10
+\item Fuente 5V 2A
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md2}{}\doxysection{\texorpdfstring{Cómo usar}{Cómo usar}}\label{md_README_autotoc_md2}
+
+\begin{DoxyEnumerate}
+\item Cargar {\ttfamily /esp32} en Platform\+IO y flashear el ESP32
+\item Ejecutar {\ttfamily /raspberry/monitor.py} en la Raspberry Pi
+\item Asegurarse de tener instalados {\ttfamily mysqldump}, {\ttfamily lftp}, y Python 3
+\end{DoxyEnumerate}\hypertarget{md_README_autotoc_md3}{}\doxysection{\texorpdfstring{Licencia}{Licencia}}\label{md_README_autotoc_md3}
+MIT 
